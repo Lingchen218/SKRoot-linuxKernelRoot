@@ -118,7 +118,7 @@ Java_com_linux_permissionmanager_MainActivity_installSu(
     //安装su工具套件
     ssize_t err;
     std::string su_hide_full_path = kernel_root::safe_install_su(strRootKey.c_str(), strBasePath.c_str(), err);
-    sstr << "install su err:" << err<<", su_hide_full_path:" << su_hide_full_path << std::endl;
+    sstr << "test install su err:" << err<<", su_hide_full_path:" << su_hide_full_path << std::endl;
     g_last_su_full_path = su_hide_full_path;
     if (err == 0) {
         sstr << "installSu done."<< std::endl;
